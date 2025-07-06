@@ -1,0 +1,15 @@
+{
+  "short_name": "Macros",
+  "name": "Macros - Fitness Tracker",
+  "icons": [
+    {
+      "src": "logo.png",
+      "sizes": "192x192 128x128 96x96 72x72 64x64 48x48 32x32 24x24 16x16",
+      "type": "image/png"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
