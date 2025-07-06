@@ -64,8 +64,8 @@ npm run develop
 - History Page <br>
   <img src="./client/src/assets/screenshots/6.png" alt="Screenshot" width="80%">
 
-- Single Cardio History <br>
+- Single Resistance History <br>
   <img src="./client/src/assets/screenshots/7.png" alt="Screenshot" width="80%">
 
-- Single Resistance History <br>
+- Single Cardio History <br>
   <img src="./client/src/assets/screenshots/8.png" alt="Screenshot" width="80%">
