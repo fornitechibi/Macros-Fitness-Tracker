@@ -10,6 +10,9 @@ A MERN-stack fitness tracker app.
   - [Technology:](#technology)
   - [Installation](#installation)
   - [Usage](#usage)
+  - [Deployment](#deployment)
+    - [1. Database Setup (MongoDB Atlas)](#1-database-setup-mongodb-atlas)
+    - [2. Deploy to Render](#2-deploy-to-render)
       - [Example Screenshot](#example-screenshot)
 
 ## Description:
@@ -42,7 +45,40 @@ After installing npm packages, the application will be invoked by using the foll
 npm run develop
 ```
 
-[Click me to see the app!](https://fittrack-mlvj.onrender.com)
+## Deployment
+
+This app is ready for deployment on Render. Follow these steps:
+
+### 1. Database Setup (MongoDB Atlas)
+1. **Create a free account** at [MongoDB Atlas](https://cloud.mongodb.com)
+2. **Create a new cluster**:
+   - Choose the FREE tier (M0 Sandbox)
+   - Select a cloud provider and region
+   - Name your cluster (e.g., "MacrosCluster")
+3. **Set up database access**:
+   - Go to "Database Access" → "Add New Database User"
+   - Create username and password (save these!)
+   - Set role to "Read and write to any database"
+4. **Configure network access**:
+   - Go to "Network Access" → "Add IP Address"
+   - Choose "Allow access from anywhere" for now
+5. **Get your connection string**:
+   - Click "Connect" on your cluster → "Connect your application"
+   - Copy the connection string
+   - Replace `<password>` with your database user password
+   - Replace `myFirstDatabase` with `macros-fitness`
+
+### 2. Deploy to Render
+1. Push your code to GitHub
+2. Connect your GitHub repo to [Render](https://render.com)
+3. Create a new Web Service
+4. Set these environment variables in Render:
+   - `MONGODB_URI`: Your MongoDB Atlas connection string
+   - `NODE_ENV`: `production`
+   - `JWT_SECRET`: A secure random string
+5. Render will automatically detect and deploy your app!
+
+[Click me to see the deployed app!](https://your-app-name.onrender.com)
 
 #### Example Screenshot
 
